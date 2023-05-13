@@ -10,6 +10,7 @@ use settings::Settings;
 use std::net::SocketAddr;
 
 mod settings;
+mod cloudflare;
 
 #[tokio::main]
 async fn main() {
