@@ -1,13 +1,12 @@
 use axum::{
     http::StatusCode,
-    response::IntoResponse,
     routing::{get, post},
     Json, Router,
 };
 use config::{Config, Environment};
 use serde::{Deserialize, Serialize};
 use settings::Settings;
-use std::net::SocketAddr;
+
 
 mod settings;
 mod cloudflare;
